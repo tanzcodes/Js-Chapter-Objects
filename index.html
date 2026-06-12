@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects Assignment</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
+        .section { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #ddd; }
+        h2 { color: #333; border-bottom: 2px solid #333; padding-bottom: 5px; }
+        h3 { color: #0066cc; margin-top: 5px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; font-size: 14px; }
+        .form-group { margin-bottom: 12px; }
+        label { display: inline-block; width: 120px; font-weight: bold; }
+        button { background: #0066cc; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #004c99; }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Objects Assignment (Chapters 53-67)</h1>
+
+    <div class="section">
+        <h2>Question 1: Calculate Total Prices</h2>
+        <div id="q1-output"></div>
+    </div>
+
+    <div class="section">
+        <h2>Question 2: Check Property Existence</h2>
+        <div id="q2-output"></div>
+    </div>
+
+    <div class="section">
+        <h2>Question 3: Constructor Function Records</h2>
+        <div id="q3-output"></div>
+    </div>
+
+    <div class="section">
+        <h2>Question 4 & Bonus: Population Survey Form</h2>
+        <form id="surveyForm">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male" checked> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </div>
+
+            <div class="form-group">
+                <label>Address:</label>
+                <input type="text" id="address" required>
+            </div>
+
+            <div class="form-group">
+                <label>Education:</label>
+                <select id="education">
+                    <option value="Matric">Matric</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Graduate">Graduate</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Profession:</label>
+                <select id="profession">
+                    <option value="Student">Student</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Teacher">Teacher</option>
+                </select>
+            </div>
+
+            <button type="submit">Save Record</button>
+        </form>
+        
+        <h3>Saved Form Records Array:</h3>
+        <pre id="survey-output">No records added yet. Fill the form above and click Save!</pre>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
